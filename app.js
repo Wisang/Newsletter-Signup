@@ -37,7 +37,7 @@ app.post("/", function(req, res) {
 
   const options = {
     method: "POST",
-    auth: "wisang1:6d72171ad070131fedcd349554f3a176-us11"
+    auth: "wisang1:<env-key>",
   };
 
   const request = https.request(url, options, function(response) {
@@ -52,13 +52,3 @@ app.post("/", function(req, res) {
 });
 
 app.listen(3000);
-
-
-// api key
-// 6d72171ad070131fedcd349554f3a176-us11
-
-// list id
-// 1aee3b3f77
-
-// api endpoint
-// https://us11.api.mailchimp.com/3.0/
